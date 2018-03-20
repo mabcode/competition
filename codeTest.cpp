@@ -13,7 +13,7 @@ int main () {
     
     cin >> line_input;
     cout << line_input << endl;
-    
+   
     return 0;
 }
 

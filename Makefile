@@ -4,6 +4,9 @@ output: codeTest.o
 	
 codeTest.o: codeTest.cpp
 	g++ -c codeTest.cpp
+
+run: output
+	./output < data.txt
 	
 clean:
 	rm *.o output

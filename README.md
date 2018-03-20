@@ -1,5 +1,5 @@
 make
 make clean
 
-//compile program and with data.txt info
-./output < data.txt
+/run program with data.txt
+make run
