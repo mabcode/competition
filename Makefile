@@ -1,8 +1,9 @@
-all: hello-cpp-world hello-c-world
 
-%: %.cc
-	g++ -std=c++11 $< -o $@
-
-%: %.c
-	gcc $< -o $@
-
+output: codeTest.o
+	g++ codeTest.o -o output
+	
+codeTest.o: codeTest.cpp
+	g++ -c codeTest.cpp
+	
+clean:
+	rm *.o output
