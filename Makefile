@@ -1,9 +1,9 @@
 
-output: codeTest.o
-	g++ codeTest.o -o output
+output: main.o
+	g++-5 --std=c++14 main.o -o output  
 	
-codeTest.o: codeTest.cpp
-	g++ -c codeTest.cpp
+main.o: main.cpp
+	g++-5 --std=c++14 -c main.cpp
 
 run: output
 	./output < data.txt
